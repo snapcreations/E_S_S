@@ -1,0 +1,1532 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Vysyaraju Jewellers | Timeless Gold &amp; Diamond Jewellery</title>
+
+  <meta
+    name="description"
+    content="Vysyaraju Jewellers - handcrafted 22k gold, diamond and bridal jewellery from Visakhapatnam. Necklaces, rings, earrings and bangles for every occasion."
+  />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Jost:wght@300;400;500;600&display=swap"
+    rel="stylesheet"
+  />
+
+  <style>
+    :root {
+      --background: #f5f1e8;
+      --card: #fbf8f1;
+      --foreground: #1e2440;
+      --navy: #1e2440;
+      --navy-soft: #2b3358;
+      --muted: #6b6f82;
+      --gold: #c39a4e;
+      --gold-light: #d9b978;
+      --border: #e4ddcd;
+      --white: #ffffff;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: "Jost", sans-serif;
+      background-color: var(--background);
+      color: var(--foreground);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4 {
+      font-family: "Cormorant Garamond", serif;
+      font-weight: 600;
+      line-height: 1.15;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    img {
+      display: block;
+      max-width: 100%;
+    }
+
+    ul {
+      list-style: none;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 1.25rem;
+    }
+
+    /* =========================
+       BUTTONS
+       ========================= */
+
+    .btn {
+      display: inline-block;
+      padding: 0.85rem 2rem;
+      font-family: "Jost", sans-serif;
+      font-size: 0.78rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      cursor: pointer;
+      border: 1px solid transparent;
+      transition: all 0.25s ease;
+      border-radius: 2px;
+    }
+
+    .btn-gold {
+      background: var(--gold);
+      color: var(--navy);
+      font-weight: 500;
+    }
+
+    .btn-gold:hover {
+      background: var(--gold-light);
+    }
+
+    .btn-outline {
+      background: transparent;
+      border-color: var(--gold);
+      color: var(--gold);
+    }
+
+    .btn-outline:hover {
+      background: var(--gold);
+      color: var(--navy);
+    }
+
+    .btn-light-outline {
+      background: transparent;
+      border-color: rgba(255, 255, 255, 0.5);
+      color: #fff;
+    }
+
+    .btn-light-outline:hover {
+      border-color: var(--gold);
+      color: var(--gold);
+    }
+
+    /* =========================
+       COMMON
+       ========================= */
+
+    .eyebrow {
+      font-size: 0.72rem;
+      letter-spacing: 0.32em;
+      text-transform: uppercase;
+      color: var(--gold);
+      font-weight: 500;
+      margin-bottom: 0.75rem;
+    }
+
+    .section-title {
+      font-size: clamp(2rem, 4vw, 2.8rem);
+      color: var(--navy);
+    }
+
+    .section-head {
+      text-align: center;
+      max-width: 620px;
+      margin: 0 auto 3rem;
+    }
+
+    .section-head p {
+      color: var(--muted);
+      margin-top: 0.75rem;
+    }
+
+    section {
+      padding: 5rem 0;
+    }
+
+    /* =========================
+       ANNOUNCEMENT BAR
+       ========================= */
+
+    .announce {
+      background: var(--navy);
+      color: #efe7d4;
+      text-align: center;
+      font-size: 0.72rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      padding: 0.55rem 1rem;
+    }
+
+    .announce span {
+      color: var(--gold-light);
+    }
+
+    /* =========================
+       HEADER
+       ========================= */
+
+    header.site {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      background: rgba(245, 241, 232, 0.92);
+      backdrop-filter: blur(8px);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .nav-wrap {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 82px;
+    }
+
+    .brand {
+      display: flex;
+      flex-direction: column;
+      line-height: 1;
+    }
+
+    .brand .name {
+      font-family: "Cormorant Garamond", serif;
+      font-size: 1.7rem;
+      font-weight: 700;
+      color: var(--navy);
+      letter-spacing: 0.02em;
+    }
+
+    .brand .sub {
+      font-size: 0.6rem;
+      letter-spacing: 0.42em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-top: 3px;
+    }
+
+    nav.primary ul {
+      display: flex;
+      gap: 2rem;
+      align-items: center;
+    }
+
+    nav.primary a {
+      font-size: 0.8rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--navy-soft);
+      font-weight: 500;
+      position: relative;
+      padding: 4px 0;
+      transition: color 0.2s;
+    }
+
+    nav.primary a::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 0;
+      height: 1.5px;
+      background: var(--gold);
+      transition: width 0.25s;
+    }
+
+    nav.primary a:hover {
+      color: var(--gold);
+    }
+
+    nav.primary a:hover::after {
+      width: 100%;
+    }
+
+    .header-actions {
+      display: flex;
+      align-items: center;
+      gap: 1.25rem;
+    }
+
+    .icon-btn {
+      background: none;
+      border: none;
+      color: var(--navy);
+      cursor: pointer;
+      display: flex;
+    }
+
+    .icon-btn:hover {
+      color: var(--gold);
+    }
+
+    .menu-toggle {
+      display: none;
+    }
+
+    /* =========================
+       HERO IMAGE
+       ========================= */
+
+    .hero {
+      position: relative;
+      width: 100%;
+      padding: 0;
+      margin: 0;
+      overflow: hidden;
+      background: #dceeff;
+    }
+
+    .hero-banner {
+      display: block;
+
+      /* FULL WIDTH */
+      width: 100%;
+
+      /* MANUAL HEIGHT */
+      height: auto;
+
+      /* IMAGE CROPPING */
+      object-fit: cover;
+
+      /* MANUAL IMAGE POSITION */
+      object-position: center center;
+
+      /*
+        MANUAL ZOOM
+
+        1    = normal
+        1.05 = slightly zoomed
+        1.10 = more zoomed
+        1.20 = strongly zoomed
+      */
+      transform: scale(1);
+
+      transform-origin: center center;
+
+      /* Prevents tiny gaps */
+      margin: 0;
+    }
+
+    /* =========================
+       DESKTOP HERO
+       ========================= */
+
+    @media (min-width: 961px) {
+      .hero-banner {
+        width: 100%;
+        height: auto;
+
+        /* CHANGE THESE TWO VALUES */
+        object-position: center center;
+        transform: scale(1);
+      }
+    }
+
+    /* =========================
+       TABLET HERO
+       ========================= */
+
+    @media (max-width: 960px) {
+      .hero-banner {
+        width: 100%;
+        height: auto;
+
+        object-position: center center;
+        transform: scale(1);
+      }
+    }
+
+    /* =========================
+       MOBILE HERO
+       ========================= */
+
+    @media (max-width: 560px) {
+      .hero-banner {
+        width: 100%;
+        height: auto;
+
+        object-position: center center;
+        transform: scale(1);
+      }
+    }
+
+    /* =========================
+       CATEGORIES
+       ========================= */
+
+    .cat-grid {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 1.5rem;
+    }
+
+    .cat-card {
+      text-align: center;
+      cursor: pointer;
+    }
+
+    .cat-thumb {
+      aspect-ratio: 1;
+      border-radius: 50%;
+      overflow: hidden;
+      border: 1px solid var(--border);
+      background: var(--card);
+      margin-bottom: 1rem;
+    }
+
+    .cat-thumb img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.5s ease;
+    }
+
+    .cat-card:hover .cat-thumb img {
+      transform: scale(1.08);
+    }
+
+    .cat-card span {
+      font-size: 0.85rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--navy-soft);
+      font-weight: 500;
+    }
+
+    /* =========================
+       COLLECTIONS
+       ========================= */
+
+    .collections {
+      background: var(--card);
+    }
+
+    .col-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+    }
+
+    .col-card {
+      position: relative;
+      overflow: hidden;
+      border-radius: 3px;
+      min-height: 460px;
+      display: flex;
+      align-items: flex-end;
+    }
+
+    .col-card img {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.6s ease;
+    }
+
+    .col-card:hover img {
+      transform: scale(1.05);
+    }
+
+    .col-overlay {
+      position: relative;
+      z-index: 2;
+      padding: 2.5rem;
+      color: #fff;
+      width: 100%;
+      background: linear-gradient(
+        to top,
+        rgba(20, 24, 45, 0.85) 0%,
+        rgba(20, 24, 45, 0.1) 70%,
+        transparent 100%
+      );
+    }
+
+    .col-overlay h3 {
+      font-size: 2rem;
+      color: #fff;
+    }
+
+    .col-overlay p {
+      color: #e6e2d5;
+      margin: 0.5rem 0 1.25rem;
+      max-width: 340px;
+    }
+
+    /* =========================
+       PRODUCTS
+       ========================= */
+
+    .prod-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1.75rem;
+    }
+
+    .prod-card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 3px;
+      overflow: hidden;
+      transition: box-shadow 0.3s, transform 0.3s;
+    }
+
+    .prod-card:hover {
+      box-shadow: 0 18px 40px -20px rgba(30, 36, 64, 0.35);
+      transform: translateY(-4px);
+    }
+
+    .prod-img {
+      position: relative;
+      aspect-ratio: 1;
+      background: #fff;
+      overflow: hidden;
+    }
+
+    .prod-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .prod-tag {
+      position: absolute;
+      top: 12px;
+      left: 12px;
+      background: var(--gold);
+      color: var(--navy);
+      font-size: 0.62rem;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      padding: 4px 10px;
+      border-radius: 2px;
+      font-weight: 600;
+    }
+
+    .prod-body {
+      padding: 1.25rem;
+      text-align: center;
+    }
+
+    .prod-body h4 {
+      font-size: 1.3rem;
+      color: var(--navy);
+      font-weight: 600;
+    }
+
+    .prod-body .cat {
+      font-size: 0.68rem;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 0.4rem;
+    }
+
+    .prod-body .price {
+      color: var(--gold);
+      font-weight: 500;
+      margin-top: 0.5rem;
+      font-size: 0.95rem;
+    }
+
+    /* =========================
+       OCCASIONS
+       ========================= */
+
+    .occasions {
+      background: var(--navy);
+      color: #fff;
+    }
+
+    .occasions .section-title {
+      color: #fff;
+    }
+
+    .occasions .section-head p {
+      color: #c3c6d6;
+    }
+
+    .occ-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1.25rem;
+    }
+
+    .occ-card {
+      border: 1px solid rgba(255, 255, 255, 0.14);
+      border-radius: 3px;
+      padding: 2.25rem 1.5rem;
+      text-align: center;
+      transition: all 0.3s;
+      cursor: pointer;
+    }
+
+    .occ-card:hover {
+      border-color: var(--gold);
+      background: rgba(195, 154, 78, 0.08);
+    }
+
+    .occ-card .occ-ico {
+      font-family: "Cormorant Garamond", serif;
+      font-size: 2.2rem;
+      color: var(--gold-light);
+      margin-bottom: 0.5rem;
+    }
+
+    .occ-card h4 {
+      font-size: 1.5rem;
+      color: #fff;
+    }
+
+    .occ-card p {
+      font-size: 0.82rem;
+      color: #b9bcce;
+      margin-top: 0.35rem;
+    }
+
+    /* =========================
+       GOLD EXCHANGE
+       ========================= */
+
+    .exchange-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 3.5rem;
+      align-items: center;
+    }
+
+    .exchange-media {
+      border-radius: 3px;
+      overflow: hidden;
+    }
+
+    .exchange-media img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .exchange-copy ul {
+      margin: 1.5rem 0;
+    }
+
+    .exchange-copy li {
+      display: flex;
+      gap: 0.75rem;
+      align-items: flex-start;
+      margin-bottom: 0.85rem;
+      color: var(--navy-soft);
+    }
+
+    .exchange-copy li::before {
+      content: "\2726";
+      color: var(--gold);
+      font-size: 1rem;
+      line-height: 1.4;
+    }
+
+    /* =========================
+       PROMISES
+       ========================= */
+
+    .promises {
+      background: var(--card);
+    }
+
+    .prom-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 2rem;
+      text-align: center;
+    }
+
+    .prom-card .prom-ico {
+      width: 58px;
+      height: 58px;
+      margin: 0 auto 1rem;
+      border: 1px solid var(--gold);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--gold);
+      font-family: "Cormorant Garamond", serif;
+      font-size: 1.5rem;
+    }
+
+    .prom-card h4 {
+      font-size: 1.35rem;
+      color: var(--navy);
+    }
+
+    .prom-card p {
+      font-size: 0.88rem;
+      color: var(--muted);
+      margin-top: 0.35rem;
+    }
+
+    /* =========================
+       NEWSLETTER
+       ========================= */
+
+    .newsletter {
+      background: var(--navy);
+      color: #fff;
+      text-align: center;
+    }
+
+    .newsletter h2 {
+      font-size: clamp(2rem, 4vw, 2.8rem);
+      color: #fff;
+    }
+
+    .newsletter p {
+      color: #c3c6d6;
+      margin-top: 0.75rem;
+    }
+
+    .news-form {
+      display: flex;
+      gap: 0.75rem;
+      max-width: 480px;
+      margin: 2rem auto 0;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .news-form input {
+      flex: 1;
+      min-width: 220px;
+      padding: 0.85rem 1.1rem;
+      border: 1px solid rgba(255, 255, 255, 0.25);
+      background: rgba(255, 255, 255, 0.06);
+      color: #fff;
+      border-radius: 2px;
+      font-family: "Jost", sans-serif;
+    }
+
+    .news-form input::placeholder {
+      color: #a9adc0;
+    }
+
+    .news-form input:focus {
+      outline: none;
+      border-color: var(--gold);
+    }
+
+    .news-msg {
+      margin-top: 1rem;
+      color: var(--gold-light);
+      font-size: 0.9rem;
+      min-height: 1.2em;
+    }
+
+    /* =========================
+       FOOTER
+       ========================= */
+
+    footer.site {
+      background: #171b30;
+      color: #c8cad8;
+      padding: 4rem 0 1.5rem;
+    }
+
+    .foot-grid {
+      display: grid;
+      grid-template-columns: 1.6fr 1fr 1fr 1.3fr;
+      gap: 2.5rem;
+    }
+
+    footer .brand .name {
+      color: #fff;
+    }
+
+    footer h5 {
+      font-family: "Jost", sans-serif;
+      font-size: 0.78rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--gold-light);
+      margin-bottom: 1.1rem;
+    }
+
+    footer ul li {
+      margin-bottom: 0.6rem;
+    }
+
+    footer ul a {
+      font-size: 0.9rem;
+      color: #b3b6c6;
+      transition: color 0.2s;
+    }
+
+    footer ul a:hover {
+      color: var(--gold);
+    }
+
+    .foot-contact p {
+      font-size: 0.9rem;
+      margin-bottom: 0.7rem;
+      color: #b3b6c6;
+      display: flex;
+      gap: 0.6rem;
+      align-items: flex-start;
+    }
+
+    .socials {
+      display: flex;
+      gap: 1rem;
+      margin-top: 1.25rem;
+    }
+
+    .socials a {
+      width: 38px;
+      height: 38px;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.75rem;
+      letter-spacing: 0.05em;
+      color: #c8cad8;
+      transition: all 0.25s;
+    }
+
+    .socials a:hover {
+      border-color: var(--gold);
+      color: var(--gold);
+    }
+
+    .foot-bottom {
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+      margin-top: 3rem;
+      padding-top: 1.5rem;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      font-size: 0.78rem;
+      color: #8c8fa3;
+    }
+
+    /* =========================
+       MOBILE NAV
+       ========================= */
+
+    .mobile-nav {
+      display: none;
+      flex-direction: column;
+      gap: 1rem;
+      padding: 1.5rem 1.25rem 2rem;
+      border-bottom: 1px solid var(--border);
+      background: var(--background);
+    }
+
+    .mobile-nav a {
+      font-size: 0.9rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--navy-soft);
+      font-weight: 500;
+    }
+
+    .mobile-nav.open {
+      display: flex;
+    }
+
+    /* =========================
+       TABLET
+       ========================= */
+
+    @media (max-width: 960px) {
+      nav.primary {
+        display: none;
+      }
+
+      .menu-toggle {
+        display: flex;
+      }
+
+      .hero-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .hero-media {
+        min-height: 360px;
+        order: -1;
+      }
+
+      .cat-grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+
+      .col-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .prod-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .occ-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .exchange-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .prom-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .foot-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    /* =========================
+       MOBILE
+       ========================= */
+
+    @media (max-width: 560px) {
+      section {
+        padding: 3.5rem 0;
+      }
+
+      .nav-wrap {
+        height: 70px;
+      }
+
+      .brand .name {
+        font-size: 1.5rem;
+      }
+
+      .cat-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .prod-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .foot-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .hero-stats {
+        gap: 1.5rem;
+      }
+
+      .container {
+        padding: 0 1rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- =========================================================
+       HEADER
+       ========================================================= -->
+
+  <header class="site">
+
+    <div class="container nav-wrap">
+
+      <a
+        href="#home"
+        class="brand"
+        aria-label="Vysyaraju Jewellers home"
+      >
+        <span class="name">Vysyaraju</span>
+        <span class="sub">Jewellers</span>
+      </a>
+
+      <nav class="primary" aria-label="Primary">
+
+        <ul>
+
+          <li>
+            <a href="https://ramakrishna632.github.io/Counter_Target">
+              Month Wise Sale Commitmets
+            </a>
+          </li>
+
+          <li>
+            <a href="https://ramakrishna632.github.io/Special_Tag/">
+              Special Tags
+            </a>
+          </li>
+
+          <li>
+            <a href="https://ramakrishna632.github.io/Happy_Money/">
+              Happy Money Tag
+            </a>
+          </li>
+
+          <li>
+            <a href="#">
+              Sitting Vs Conversation
+            </a>
+          </li>
+
+          <li>
+            <a href="#">
+              o
+            </a>
+          </li>
+
+          <li>
+            <a href="#">
+              o
+            </a>
+          </li>
+
+        </ul>
+
+      </nav>
+
+      <div class="header-actions">
+
+        <button
+          class="icon-btn menu-toggle"
+          id="menuToggle"
+          aria-label="Menu"
+          aria-expanded="false"
+        >
+
+          <svg
+            width="22"
+            height="22"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.7"
+          >
+            <path d="M4 6h16M4 12h16M4 18h16"/>
+          </svg>
+
+        </button>
+
+      </div>
+
+    </div>
+
+    <!-- MOBILE NAV -->
+
+    <div class="mobile-nav" id="mobileNav">
+
+      <a href="https://ramakrishna632.github.io/Counter_Target">
+        All Jewellery
+      </a>
+
+      <a href="#">
+        Gold
+      </a>
+
+      <a href="#">
+        Diamond
+      </a>
+
+      <a href="#">
+        Bridal
+      </a>
+
+      <a href="#">
+        Collections
+      </a>
+
+      <a href="#">
+        About
+      </a>
+
+    </div>
+
+  </header>
+
+
+  <!-- =========================================================
+       HERO
+       ========================================================= -->
+
+  <section class="hero" id="home">
+  <div class="hero-image-wrapper">
+    <img
+      src="https://drive.google.com/thumbnail?id=15nsT5UefsnzvmTXPOsGyHT50GebKNuNY&sz=w2000"
+      alt="Vysyaraju Jewellers"
+      class="hero-banner"
+    />
+  </div>
+</section>
+
+
+  <!-- =========================================================
+       CATEGORIES
+       ========================================================= -->
+
+  <!--
+  <section id="categories">
+
+    <div class="container">
+
+      <div class="section-head">
+
+        <p class="eyebrow">
+          Shop by Category
+        </p>
+
+        <h2 class="section-title">
+          Find your signature piece
+        </h2>
+
+      </div>
+
+      <div class="cat-grid">
+
+        <a
+          class="cat-card"
+          href="https://ramakrishna632.github.io/Counter_Target"
+        >
+
+          <div class="cat-thumb">
+            <img
+              src="images/cat-necklaces.png"
+              alt="Gold necklaces"
+            />
+          </div>
+
+          <span>Necklaces</span>
+
+        </a>
+
+        <a
+          class="cat-card"
+          href="https://ramakrishna632.github.io/Counter_Target"
+        >
+
+          <div class="cat-thumb">
+            <img
+              src="images/cat-earrings.png"
+              alt="Gold earrings"
+            />
+          </div>
+
+          <span>Earrings</span>
+
+        </a>
+
+        <a
+          class="cat-card"
+          href="https://ramakrishna632.github.io/Counter_Target"
+        >
+
+          <div class="cat-thumb">
+            <img
+              src="images/cat-rings.png"
+              alt="Gold and diamond rings"
+            />
+          </div>
+
+          <span>Rings</span>
+
+        </a>
+
+        <a
+          class="cat-card"
+          href="https://ramakrishna632.github.io/Counter_Target"
+        >
+
+          <div class="cat-thumb">
+            <img
+              src="images/cat-bangles.png"
+              alt="Gold bangles"
+            />
+          </div>
+
+          <span>Bangles</span>
+
+        </a>
+
+        <a
+          class="cat-card"
+          href="https://ramakrishna632.github.io/Counter_Target"
+        >
+
+          <div class="cat-thumb">
+            <img
+              src="images/collection-diamond.png"
+              alt="Diamond jewellery"
+            />
+          </div>
+
+          <span>Diamonds</span>
+
+        </a>
+
+      </div>
+
+    </div>
+
+  </section>
+  -->
+
+
+  <!-- =========================================================
+       PROMISES
+       ========================================================= -->
+
+  <section class="promises">
+
+    <div class="container">
+
+      <div class="section-head">
+
+        <p class="eyebrow">
+          The Vysyaraju Promise
+        </p>
+
+        <h2 class="section-title">
+          Reasons to trust us
+        </h2>
+
+      </div>
+
+
+      <div class="prom-grid">
+
+        <div class="prom-card">
+
+          <div class="prom-ico">
+            &#10022;
+          </div>
+
+          <h4>
+            BIS Hallmarked
+          </h4>
+
+          <p>
+            Every piece certified for purity.
+          </p>
+
+        </div>
+
+
+        <div class="prom-card">
+
+          <div class="prom-ico">
+            &#8635;
+          </div>
+
+          <h4>
+            Lifetime Exchange
+          </h4>
+
+          <p>
+            Exchange anytime at fair value.
+          </p>
+
+        </div>
+
+
+        <div class="prom-card">
+
+          <div class="prom-ico">
+            &#9878;
+          </div>
+
+          <h4>
+            Transparent Pricing
+          </h4>
+
+          <p>
+            Clear rates, no hidden charges.
+          </p>
+
+        </div>
+
+
+        <div class="prom-card">
+
+          <div class="prom-ico">
+            &#9873;
+          </div>
+
+          <h4>
+            Insured Delivery
+          </h4>
+
+          <p>
+            Safe, insured shipping nationwide.
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- =========================================================
+       FOOTER
+       ========================================================= -->
+
+  <footer class="site">
+
+    <div class="container">
+
+      <div class="foot-grid">
+
+        <!-- BRAND -->
+
+        <div>
+
+          <div class="brand">
+
+            <span
+              class="name"
+              style="font-size:1.6rem"
+            >
+              Vysyaraju
+            </span>
+
+            <span class="sub">
+              Jewellers
+            </span>
+
+          </div>
+
+          <p
+            style="
+              margin-top:1rem;
+              font-size:0.9rem;
+              color:#b3b6c6;
+              max-width:280px;
+            "
+          >
+            Handcrafting timeless gold and diamond jewellery in Visakhapatnam since 1962.
+          </p>
+
+        </div>
+
+
+        <!-- SHOP -->
+
+        <div>
+
+          <h5>
+            Shop
+          </h5>
+
+          <ul>
+
+            <li>
+              <a href="https://ramakrishna632.github.io/Counter_Target">
+                All Jewellery
+              </a>
+            </li>
+
+            <li>
+              <a href="#">
+                Gold
+              </a>
+            </li>
+
+            <li>
+              <a href="#">
+                Diamond
+              </a>
+            </li>
+
+            <li>
+              <a href="#">
+                Bridal
+              </a>
+            </li>
+
+          </ul>
+
+        </div>
+
+
+        <!-- COMPANY -->
+
+        <div>
+
+          <h5>
+            Company
+          </h5>
+
+          <ul>
+
+            <li>
+              <a href="#">
+                About Us
+              </a>
+            </li>
+
+            <li>
+              <a href="#">
+                Stores
+              </a>
+            </li>
+
+            <li>
+              <a href="#">
+                Gold Exchange
+              </a>
+            </li>
+
+            <li>
+              <a href="#">
+                Contact
+              </a>
+            </li>
+
+          </ul>
+
+        </div>
+
+
+        <!-- CONTACT -->
+
+        <div class="foot-contact">
+
+          <h5>
+            Visit Us
+          </h5>
+
+          <p>
+            &#9873;&nbsp;
+            Visakhapatnam, Andhra Pradesh 530001
+          </p>
+
+          <p>
+            &#9742;&nbsp;
+            +91 7036849024
+          </p>
+
+          <p>
+            &#9993;&nbsp;
+            care@vysyarajujewellers.com
+          </p>
+
+        </div>
+
+      </div>
+
+
+      <!-- FOOTER BOTTOM -->
+
+      <div class="foot-bottom">
+
+        <span>
+          &copy;
+          <span id="year"></span>
+          Vysyaraju Jewellers.
+          All rights reserved.
+        </span>
+
+        <span>
+          Privacy Policy &middot; Terms of Service
+        </span>
+
+      </div>
+
+    </div>
+
+  </footer>
+
+
+  <!-- =========================================================
+       JAVASCRIPT
+       ========================================================= -->
+
+  <script>
+
+    /* ==========================================
+       MOBILE MENU
+       ========================================== */
+
+    var menuToggle =
+      document.getElementById("menuToggle");
+
+    var mobileNav =
+      document.getElementById("mobileNav");
+
+
+    menuToggle.addEventListener(
+      "click",
+      function () {
+
+        var open =
+          mobileNav.classList.toggle("open");
+
+        menuToggle.setAttribute(
+          "aria-expanded",
+          open ? "true" : "false"
+        );
+
+      }
+    );
+
+
+    /* ==========================================
+       CLOSE MOBILE MENU
+       ========================================== */
+
+    mobileNav
+      .querySelectorAll("a")
+      .forEach(function (link) {
+
+        link.addEventListener(
+          "click",
+          function () {
+
+            mobileNav.classList.remove("open");
+
+            menuToggle.setAttribute(
+              "aria-expanded",
+              "false"
+            );
+
+          }
+        );
+
+      });
+
+
+    /* ==========================================
+       CURRENT YEAR
+       ========================================== */
+
+    document.getElementById("year").textContent =
+      new Date().getFullYear();
+
+  </script>
+
+</body>
+</html>
