@@ -1526,6 +1526,91 @@
     document.getElementById("year").textContent =
       new Date().getFullYear();
 
+
+    
+/* =========================================================
+   DISABLE RIGHT CLICK / COMMON DEVTOOLS SHORTCUTS
+========================================================= */
+
+(function(){
+
+    document.addEventListener(
+        "contextmenu",
+        function(e){
+
+            e.preventDefault();
+
+        }
+    );
+
+
+    document.addEventListener(
+        "keydown",
+        function(e){
+
+            if(e.key === "F12"){
+
+                e.preventDefault();
+
+                return;
+
+            }
+
+
+            if(
+                e.ctrlKey &&
+                e.shiftKey &&
+                e.key.toLowerCase() === "i"
+            ){
+
+                e.preventDefault();
+
+                return;
+
+            }
+
+
+            if(
+                e.ctrlKey &&
+                e.shiftKey &&
+                e.key.toLowerCase() === "j"
+            ){
+
+                e.preventDefault();
+
+                return;
+
+            }
+
+
+            if(
+                e.ctrlKey &&
+                e.shiftKey &&
+                e.key.toLowerCase() === "c"
+            ){
+
+                e.preventDefault();
+
+                return;
+
+            }
+
+
+            if(
+                e.ctrlKey &&
+                e.key.toLowerCase() === "u"
+            ){
+
+                e.preventDefault();
+
+                return;
+
+            }
+
+        }
+    );
+
+})();
   </script>
 
 </body>
