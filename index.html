@@ -1471,7 +1471,21 @@
     /* ==========================================
        MOBILE MENU
        ========================================== */
+function openPage(page) {
+    const pages = {
+        C_T: "https://snapcreations.github.io/C_T/",
+        S_T: "https://snapcreations.github.io/S_T/",
+        H_M: "https://snapcreations.github.io/H_M/",
+        Cross_Promotion:
+            "https://snapcreation.github.io/Cross_Promotion_Entry/"
+    };
 
+    if (pages[page]) {
+        window.location.href = pages[page];
+    }
+}
+
+    
     var menuToggle =
       document.getElementById("menuToggle");
 
