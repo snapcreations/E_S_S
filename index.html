@@ -1471,19 +1471,29 @@
     /* ==========================================
        MOBILE MENU
        ========================================== */
-function openPage(page) {
-    const pages = {
-        C_T: "https://snapcreations.github.io/C_T/",
-        S_T: "https://snapcreations.github.io/S_T/",
-        H_M: "https://snapcreations.github.io/H_M/",
-        Cross_Promotion:
-            "https://snapcreation.github.io/Cross_Promotion_Entry/"
-    };
+/* PREVENT OPENING LINKS IN NEW TAB */
 
-    if (pages[page]) {
-        window.location.href = pages[page];
-    }
-}
+document.querySelectorAll(
+    'nav.primary a, .mobile-nav a, footer a'
+).forEach(function(link) {
+
+    link.addEventListener('click', function(e) {
+
+        if (e.ctrlKey || e.metaKey || e.shiftKey || e.button === 1) {
+            e.preventDefault();
+            e.stopImmediatePropagation();
+            return false;
+        }
+
+    }, true);
+
+    link.addEventListener('auxclick', function(e) {
+        e.preventDefault();
+        e.stopImmediatePropagation();
+        return false;
+    }, true);
+
+});
 
     
     var menuToggle =
